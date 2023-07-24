@@ -2,7 +2,7 @@
 
 namespace Writeline
 {
-    class 3_writeline 
+    class writeline 
     {
         static void Main(string[] args) 
         {
