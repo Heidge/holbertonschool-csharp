@@ -1,30 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "/home/heidge/holbertonschool-csharp/csharp-hello_world/3-writeline/3-writeline.csproj": {}
+    "c:\\Users\\axelg\\holbertonschool-csharp\\csharp-hello_world\\3-writeline\\3-writeline.csproj": {}
   },
   "projects": {
-    "/home/heidge/holbertonschool-csharp/csharp-hello_world/3-writeline/3-writeline.csproj": {
+    "c:\\Users\\axelg\\holbertonschool-csharp\\csharp-hello_world\\3-writeline\\3-writeline.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/heidge/holbertonschool-csharp/csharp-hello_world/3-writeline/3-writeline.csproj",
+        "projectUniqueName": "c:\\Users\\axelg\\holbertonschool-csharp\\csharp-hello_world\\3-writeline\\3-writeline.csproj",
         "projectName": "3-writeline",
-        "projectPath": "/home/heidge/holbertonschool-csharp/csharp-hello_world/3-writeline/3-writeline.csproj",
-        "packagesPath": "/home/heidge/.nuget/packages/",
-        "outputPath": "/home/heidge/holbertonschool-csharp/csharp-hello_world/3-writeline/obj/",
+        "projectPath": "c:\\Users\\axelg\\holbertonschool-csharp\\csharp-hello_world\\3-writeline\\3-writeline.csproj",
+        "packagesPath": "C:\\Users\\axelg\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\axelg\\holbertonschool-csharp\\csharp-hello_world\\3-writeline\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/heidge/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\axelg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.1": {
-            "targetAlias": "netcoreapp2.1",
             "projectReferences": {}
           }
         },
@@ -36,27 +40,18 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "targetAlias": "netcoreapp2.1",
           "dependencies": {
             "Microsoft.NETCore.App": {
-              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
             }
           },
           "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
+            "net461"
           ],
           "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.109/RuntimeIdentifierGraph.json"
+          "warn": true
         }
       }
     }
