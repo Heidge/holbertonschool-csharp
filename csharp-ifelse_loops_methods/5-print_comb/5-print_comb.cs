@@ -6,24 +6,30 @@ namespace _2_print_alphabet
     {
         static void Main(string[] args)
         {
-            int i;
+            int i = 0;
+            int j = 0;
+            int k = 0;
             for (i = 0; i <= 99; i++)
             {
                 if (i < 99)
                 {
-                    if (i < 10)
+                    if (k < 10 && j < 10)
                     {
-                        Console.Write($"0{i}, ");
+                        Console.Write($"{k}{j}, ");
+            
                     }
                     else
                     {
-                        Console.Write($"{i}, ");
+                        Console.Write($"{j}, ");
                     }
+                    j++;
                 }
                 else
                 {
                     Console.WriteLine($"{i}");
                 }
+
+
             }
         }
     }
