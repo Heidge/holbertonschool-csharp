@@ -20,7 +20,10 @@ namespace _2_print_alphabet
                         Console.Write($"{i}, ");
                     }
                 }
-
+                else
+                {
+                    Console.WriteLine($"{i}");
+                }
             }
         }
     }
