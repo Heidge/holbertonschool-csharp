@@ -1,12 +1,16 @@
 ﻿using System;
 
-namespace _4_print_hexa
+namespace _2_print_alphabet
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int i;
+            for (i = 0; i <= 98; i++)
+            {
+                Console.WriteLine($"{i} = {i:X}");
+            }
         }
     }
 }
