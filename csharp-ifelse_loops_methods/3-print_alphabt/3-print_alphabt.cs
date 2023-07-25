@@ -1,12 +1,19 @@
 ﻿using System;
 
-namespace _3_print_alphabt
+namespace _2_print_alphabet
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            char letter;
+            for (letter = 'a'; letter <= 'z'; letter++)
+            {
+                if (letter != 'q' && letter != 'e')
+                {
+                    Console.Write(letter);
+                }
+            }
         }
     }
 }
