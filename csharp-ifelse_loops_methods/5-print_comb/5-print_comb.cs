@@ -24,9 +24,7 @@ namespace _2_print_alphabet
                 {
                     Console.WriteLine($"{i}");
                 }
-
             }
-
         }
     }
 }
