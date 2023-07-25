@@ -6,7 +6,28 @@ namespace _10_print_line
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Line.PrintLine(3);
+            Line.PrintLine(0);
+            Line.PrintLine(12);
+            Line.PrintLine(-98);
+        }
+    }
+
+    class Line
+    {
+        public static void PrintLine(int length)
+        {
+            if (length > 0)
+            {
+                for (int i = 0; i < length; i++)
+                {
+                    Console.Write("_");
+                }
+            }
+            else
+            {
+                Console.WriteLine();
+            }
         }
     }
 }
