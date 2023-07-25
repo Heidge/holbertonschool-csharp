@@ -9,19 +9,24 @@ namespace _2_print_alphabet
             int i;
             for (i = 0; i <= 99; i++)
             {
-                if (i < 10)
+                if (i < 99)
                 {
-                    Console.Write($"0{i}");
+                    if (i < 10)
+                    {
+                        Console.Write($"0{i}, ");
+                    }
+                    else
+                    {
+                        Console.Write($"{i}, ");
+                    }
                 }
                 else
                 {
-                    Console.Write($"{i}");
+                    Console.WriteLine($"{i}");
                 }
-                if (i < 99)
-                {
-                    Console.Write(", ");
-                }
+
             }
+
         }
     }
 }
