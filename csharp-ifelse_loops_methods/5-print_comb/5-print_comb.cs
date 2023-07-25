@@ -1,12 +1,27 @@
 ﻿using System;
 
-namespace _5_print_comb
+namespace _2_print_alphabet
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int i;
+            for (i = 0; i <= 99; i++)
+            {
+                if (i < 10)
+                {
+                    Console.Write($"0{i}");
+                }
+                else
+                {
+                    Console.Write($"{i}");
+                }
+                if (i < 99)
+                {
+                    Console.Write(", ");
+                }
+            }
         }
     }
 }
