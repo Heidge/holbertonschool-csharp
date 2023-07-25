@@ -9,7 +9,7 @@ namespace _2_print_alphabet
             int i;
             for (i = 0; i <= 98; i++)
             {
-                Console.WriteLine($"{i} = {i:X}");
+                Console.WriteLine($"{i} = 0x{i:X}");
             }
         }
     }
