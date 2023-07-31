@@ -11,7 +11,7 @@ public static class Array
             foreach (int i in Array)
             {
                 int arrayL = Array.Length;
-                if (i = arrayL - 1)
+                if (i == arrayL - 1)
                 {
                     Console.Write($"{index}");
                 }
