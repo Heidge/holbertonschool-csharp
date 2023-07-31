@@ -4,12 +4,14 @@ public static class Array
 {
     public static int[] CreatePrint(int size)
     {
+        int index = 0;
         if (size > 0)
         {
             int[] Array = new int[size];
-            for (int i = 0; i < size; i++)
+            foreach (int i in Array)
             {
-                Console.Write(i + " ");
+                Console.Write($"{index} ");
+                index++;
             }
             Console.WriteLine("");
             return Array;
