@@ -11,9 +11,9 @@ public static class Array
             foreach (int i in Array)
             {
                 int arrayL = Array.Length;
-                if (i < arrayL - 2)
+                if (i = arrayL - 1)
                 {
-                    Console.Write($"{index} ");
+                    Console.Write($"{index}");
                 }
                 else
                 {
