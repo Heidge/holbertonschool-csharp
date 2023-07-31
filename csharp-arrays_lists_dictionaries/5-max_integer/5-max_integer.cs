@@ -10,10 +10,6 @@ class List
             Console.WriteLine("List is empty");
             return -1;
         }
-        else if (myList.Count <= 0)
-        {
-            return 0;
-        }
         else
         {
             int maxNumber = 0;
@@ -24,7 +20,14 @@ class List
                     maxNumber = myList[i];
                 }
             }
-            return maxNumber;
+            if (maxNumber <= 0)
+            {
+                return 0;
+            }
+            else
+            {
+                return maxNumber;
+            }
         }
     }
 }
