@@ -4,24 +4,21 @@ public static class Array
 {
     public static int[] CreatePrint(int size)
     {
-        int index = 0;
         if (size > 0)
         {
             int[] Array = new int[size];
-            foreach (int i in Array)
+            for (int i = 0; i < size; i++)
             {
                 int arrayL = Array.Length;
                 if (i < arrayL - 1)
                 {
-                    Console.Write($"{index} {index}");
+                    Console.Write($"{i} ");
                 }
                 else
                 {
-                    Console.Write($"{index}");
+                    Console.WriteLine($"{i}");
                 }
-                index++;
             }
-            Console.WriteLine("");
             return Array;
         }
         else if (size == 0)
