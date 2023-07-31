@@ -10,7 +10,15 @@ public static class Array
             int[] Array = new int[size];
             foreach (int i in Array)
             {
-                Console.Write($"{index} ");
+                int arrayL = Array.Length;
+                if (i < arrayL - 2)
+                {
+                    Console.Write($"{index} ");
+                }
+                else
+                {
+                    Console.Write($"{index} ");
+                }
                 index++;
             }
             Console.WriteLine("");
