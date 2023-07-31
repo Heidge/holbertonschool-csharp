@@ -13,7 +13,7 @@ public static class Array
                 int arrayL = Array.Length;
                 if (i < arrayL - 1)
                 {
-                    Console.Write($"{index} ");
+                    Console.Write($"{index} {index}");
                 }
                 else
                 {
