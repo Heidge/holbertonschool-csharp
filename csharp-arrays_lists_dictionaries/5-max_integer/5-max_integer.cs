@@ -12,7 +12,7 @@ class List
         }
         else
         {
-            int maxNumber = 0;
+            int maxNumber = myList[1];
             for (int i = 0; i < myList.Count; i++)
             {
                 if (myList[i] > maxNumber)
@@ -20,14 +20,8 @@ class List
                     maxNumber = myList[i];
                 }
             }
-            if (maxNumber <= 0)
-            {
-                return 0;
-            }
-            else
-            {
+
                 return maxNumber;
-            }
         }
     }
 }
