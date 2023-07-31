@@ -7,6 +7,11 @@ public static class Array
         if (size > 0)
         {
             int[] Array = new int[size];
+            for (int i = 0; i < size; i++)
+            {
+                Console.Write(i + " ");
+            }
+            Console.WriteLine("");
             return Array;
         }
         else if (size == 0)
