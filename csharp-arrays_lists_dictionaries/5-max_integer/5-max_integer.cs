@@ -10,6 +10,10 @@ class List
             Console.WriteLine("List is empty");
             return -1;
         }
+        else if (myList.Count <= 0)
+        {
+            return 0;
+        }
         else
         {
             int maxNumber = 0;
