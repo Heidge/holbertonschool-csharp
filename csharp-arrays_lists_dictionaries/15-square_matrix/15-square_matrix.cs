@@ -6,12 +6,17 @@ using System.Collections.Generic;
     {
         public static int[,] Square(int[,] myMatrix)
         {
-            int size = Convert.ToInt32(Math.Sqrt(myMatrix.Length));
-            int[,] array2D = new int[size, size];
             
-            for (int i = 0; i < Math.Sqrt(myMatrix.Length); i++)
+
+            int nbArray = myMatrix.GetLength(0);
+            int sizeArray = myMatrix.Length / nbArray;
+            int[,] array2D = new int[nbArray, sizeArray];
+            
+
+
+            for (int i = 0; i < nbArray; i++)
             {
-                for (int j = 0; j < Math.Sqrt(myMatrix.Length); j++)
+                for (int j = 0; j < sizeArray; j++)
                 {
                     array2D[i, j] = myMatrix[i, j] * myMatrix[i, j];
                 }
