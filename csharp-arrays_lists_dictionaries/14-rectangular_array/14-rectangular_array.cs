@@ -15,13 +15,18 @@ public static class Array
                 {
                     Console.Write("1 ");
                 }
+                else if (j == array.Length - 1)
+                {
+                    Console.WriteLine($"{array[i]}");
+
+                }
                 else
                 {
                     Console.Write($"{array[i]} ");
                 }
 
             }
-            Console.WriteLine();
+
         }
     }
 }
