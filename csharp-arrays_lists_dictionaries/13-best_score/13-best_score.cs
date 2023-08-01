@@ -7,25 +7,28 @@ class Dictionary
     {
         int bestScore = 0;
         string bestPeople = "";
-
-        foreach (var kvp in myList)
+        if (myList == null || myList.Count == 0)
         {
-            if (kvp.Value > bestScore)
-            {
-                bestScore = kvp.Value;
-            }
+            bestPeople = "None";
         }
-        
-        foreach (KeyValuePair<string, int> kvp in myList)
+        else
         {
-            if (bestScore == kvp.Value)
+            foreach (var kvp in myList)
             {
-                bestPeople = kvp.Key;
-                break;
+                if (kvp.Value > bestScore)
+                {
+                    bestScore = kvp.Value;
+                }
             }
-            else
+
+            foreach (KeyValuePair<string, int> kvp in myList)
             {
-                bestPeople = "None";
+
+                if (bestScore == kvp.Value)
+                {
+                    bestPeople = kvp.Key;
+                    break;
+                }
             }
         }
         return bestPeople;
