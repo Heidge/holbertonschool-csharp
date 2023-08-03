@@ -5,7 +5,12 @@ using System.Collections.Generic;
     {
         public static void Delete(LinkedList<int> myLList, int index)
         {
-            Console.WriteLine("Hello World!");
+            LinkedListNode<int> nodeToRemove = myLList.First;
+            for (int i = 0; i < index; i++)
+            {
+                nodeToRemove = nodeToRemove.Next;
+            }
+            myLList.Remove(nodeToRemove);
         }
     }
 
