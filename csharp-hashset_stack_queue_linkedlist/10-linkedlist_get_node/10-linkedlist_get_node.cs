@@ -1,10 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 
-    class LList
+class LList
+{
+    public static int GetNode(LinkedList<int> myLList, int n)
     {
-        public static int GetNode(LinkedList<int> myLList, int n)
+        int index = 0;
+        foreach (var item in myLList)
         {
-            Console.WriteLine("Hello World!");
+            if (index == n)
+            {
+                return item;
+            }
+            index++;
         }
+        return 0;
     }
+}
+
+
