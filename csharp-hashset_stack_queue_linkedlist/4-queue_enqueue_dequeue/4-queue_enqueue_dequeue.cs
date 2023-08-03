@@ -16,7 +16,7 @@ using System.Collections.Generic;
         }
         else
         {
-            Console.WriteLine("Top item: {0}", aQueue.Peek());
+            Console.WriteLine("First item: {0}", aQueue.Peek());
         }
 
         bool match = false;
