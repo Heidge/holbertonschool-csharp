@@ -5,6 +5,11 @@ using System.Collections.Generic;
     {
         public static int Length(LinkedList<int> myLList)
         {
-            Console.WriteLine("Hello World!");
+            int count = 0;
+            foreach (var item in myLList)
+            {
+                count += 1;
+            }
+            return count;
         }
     }
