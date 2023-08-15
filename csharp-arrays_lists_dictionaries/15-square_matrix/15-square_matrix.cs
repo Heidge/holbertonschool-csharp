@@ -6,13 +6,9 @@ using System.Collections.Generic;
     {
         public static int[,] Square(int[,] myMatrix)
         {
-            
-
             int nbArray = myMatrix.GetLength(0);
             int sizeArray = myMatrix.Length / nbArray;
             int[,] array2D = new int[nbArray, sizeArray];
-            
-
 
             for (int i = 0; i < nbArray; i++)
             {
