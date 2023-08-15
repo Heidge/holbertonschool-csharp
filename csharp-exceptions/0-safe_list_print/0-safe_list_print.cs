@@ -5,9 +5,9 @@ class List
 {
     public static int SafePrint(List<int> myList, int n)
     {
+        int i = 0;
         try
         {
-            int i = 0;
             for (i = 0; i < n; i++)
             {
                 Console.WriteLine($"{myList[i]}");
@@ -16,7 +16,7 @@ class List
         }
         catch
         {
-            return n;
+            return i;
         }
     }
 }
