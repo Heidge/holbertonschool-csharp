@@ -1,12 +1,22 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace _1_divide_print
+class Int
 {
-    class Program
+    public static void divide(int a, int b)
     {
-        static void Main(string[] args)
+        int c = 0;
+        try
         {
-            Console.WriteLine("Hello World!");
+            c = a / b;
+        }
+        catch
+        {
+            Console.WriteLine("Cannot divide by zero");
+        }
+        finally
+        {
+            Console.WriteLine($"{a} / {b} = {c}");
         }
     }
 }
