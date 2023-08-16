@@ -23,7 +23,7 @@ class List
             }
             catch (ArgumentOutOfRangeException)
             {
-                Console.WriteLine("Index out of range");
+                Console.WriteLine("Out of range");
             }
         }
         return myList;
