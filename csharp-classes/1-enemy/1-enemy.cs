@@ -3,12 +3,18 @@
 namespace Enemies
 {
 /// <summary>
-///New class zombie
+/// New class zombie
 /// </summary>
     public class Zombie
-    {
-        public int health;
 
+    {
+        /// <summary>
+        /// health field
+        /// </summary>
+        public int health;
+        /// <summary>
+        /// new constructor for zombie
+        /// </summary>
         public Zombie()
         {
             health = 0;
