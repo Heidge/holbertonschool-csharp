@@ -19,7 +19,11 @@ namespace Enemies
         {
             health = 0;
         }
-
+        /// <summary>
+        /// new constructor with one int parameter mandatory
+        /// </summary>
+        /// <param name="value">value gift to method</param>
+        /// <exception cref="ArgumentException">if value is set to 0 or less, throw this exception</exception>
         public Zombie(int value)
         {
             if (value < 0)
