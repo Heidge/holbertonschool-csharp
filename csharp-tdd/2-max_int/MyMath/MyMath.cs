@@ -25,7 +25,6 @@ namespace MyMath
                 if (nums[i] > maxInt)
                 {
                     maxInt = nums[i];
-                    Console.WriteLine(maxInt);
                 }
             }
             return maxInt;
