@@ -22,7 +22,7 @@ namespace MyMath.Tests
             int[,] b;
             a = new int[,] { { 2, 2 }, { 4, 4 }, { 6, 6 }, { 8, 8 } };
             b = new int[,] { { 1, 1 }, { 2, 2 }, { 3, 3 }, { 4, 4 } };
-            Assert.AreEqual(Matrix.Divide(a, 0), b);
+            Assert.AreEqual(Matrix.Divide(a, 0), null);
         }
 
         [Test]
@@ -31,7 +31,7 @@ namespace MyMath.Tests
             int[,] a = null;
             int[,] b;
             b = new int[,] { { 1, 1 }, { 2, 2 }, { 3, 3 }, { 4, 4 } };
-            Assert.AreEqual(Matrix.Divide(a, 2), b);
+            Assert.AreEqual(Matrix.Divide(a, 2), null);
         }
     }
 }
