@@ -5,15 +5,10 @@ namespace MyMath.Tests
     [TestFixture]
     public class Tests
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
-
         [Test]
         public void Test1()
         {
-            Assert.Pass();
+            Assert.AreEqual(Operations.Add(1, 2), 3);
         }
     }
 }
