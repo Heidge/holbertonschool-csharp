@@ -9,7 +9,7 @@ namespace MyMath.Tests
         [Test]
         public void Test1()
         {
-            List<int> list = new List<int>() { -3, -2, -1 };
+            List<int> list = new List<int>() { -1, -2, -3 };
             Assert.AreEqual(Operations.Max(list), -1);
         }
         [Test]

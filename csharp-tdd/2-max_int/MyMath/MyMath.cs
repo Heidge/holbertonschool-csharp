@@ -20,13 +20,12 @@ namespace MyMath
             
             int maxInt = nums[0];
 
-            for (int i = 0; i < nums.Count; i++) 
+            foreach (int i in nums)
             {
-                if (nums[i] > maxInt)
-                {
-                    maxInt = nums[i];
-                }
+                if (i > maxInt)
+                    maxInt = i;
             }
+            
             return maxInt;
         }
     }
