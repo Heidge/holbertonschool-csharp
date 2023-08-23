@@ -1,6 +1,6 @@
 using NUnit.Framework;
 
-namespace MyMath.Test
+namespace MyMath.Tests
 {
     [TestFixture]
     public class Tests
@@ -8,7 +8,6 @@ namespace MyMath.Test
         [SetUp]
         public void Setup()
         {
-            tests = new Tests();
         }
 
         [Test]
