@@ -8,6 +8,7 @@ namespace MyMath.Test
         [SetUp]
         public void Setup()
         {
+            tests = new Tests();
         }
 
         [Test]
