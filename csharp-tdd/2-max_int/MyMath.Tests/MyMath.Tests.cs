@@ -10,8 +10,8 @@ namespace MyMath.Tests
         public void Test1()
         {
             
-            List<int> list = new List<int>() { 1, 2, 3 };
-            Assert.AreEqual(Operations.Max(list), 3);
+            List<int> list = new List<int>() { -85, -2, -3 };
+            Assert.AreEqual(Operations.Max(list), -2);
         }
         [Test]
         public void Test2()
