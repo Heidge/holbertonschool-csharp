@@ -19,5 +19,24 @@ namespace Text.Tests
             string test_string = "helloholberton";
             Assert.AreEqual(Str.UniqueChar(test_string), 8);
         }
+        [Test]
+        public void Test3()
+        {
+            string test_string = "";
+            Assert.AreEqual(Str.UniqueChar(test_string), -1);
+        }
+        [Test]
+        public void Test4()
+        {
+            string test_string = "aabb";
+            Assert.AreEqual(Str.UniqueChar(test_string), -1);
+        }
+        [Test]
+        public void Test5()
+        {
+            string test_string = "aabbc";
+            Assert.AreEqual(Str.UniqueChar(test_string), 4);
+        }
+
     }
 }
