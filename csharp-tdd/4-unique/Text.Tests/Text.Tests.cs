@@ -11,13 +11,13 @@ namespace Text.Tests
         public void Test1()
         {
             string test_string = "bo";
-            Assert.AreEqual(Str.UniqueChar(test_string), -1);
+            Assert.AreEqual(Str.UniqueChar(test_string), 0);
         }
-
+        [Test]
         public void Test2()
         {
             string test_string = "bob";
-            Assert.AreEqual(Str.UniqueChar(test_string), 2);
+            Assert.AreEqual(Str.UniqueChar(test_string), -1);
         }
     }
 }

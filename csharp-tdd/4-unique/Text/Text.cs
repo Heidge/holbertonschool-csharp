@@ -13,17 +13,17 @@ namespace Text
     {
         public static int UniqueChar(string s)
         {
-            string one = "";
-            string two = "";
-            for (int i = 0; i < s.Length; i++)
+            char[] array = s.ToCharArray();
+            int count = 0;
+            for (int i = 0; i < array.Length; i++)
             {
-                one = s.Substring(i, 1);
-                for (int j = 0; j < s.Length; j++)
+                foreach (char c in array)
                 {
-                    two = s.Substring(j, 1);
-                    if ((one == two) && (i != j))
-                        return j;
+                    if (c == array[i])
+                        count += 1;
                 }
+                if (count == 1)
+                    return i;
             }
             return -1;
         }
