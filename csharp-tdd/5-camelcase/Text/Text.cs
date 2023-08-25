@@ -13,8 +13,12 @@ namespace Text
     {
         public static int CamelCase(string s)
         {
-            int count = 0;
+            int count = 1;
             s.ToCharArray();
+            if (s.Length == 0)
+            {
+                count = 0;
+            }
             foreach (char c in s)
             {
                 if (Char.IsUpper(c))
