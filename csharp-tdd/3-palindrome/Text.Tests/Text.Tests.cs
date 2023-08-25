@@ -31,7 +31,7 @@ namespace Text.Tests
         [Test]
         public void Test4()
         {
-            string test_string = "b o b";
+            string test_string = "b ob";
             Assert.AreEqual(Str.IsPalindrome(test_string), true);
         }
 
@@ -39,6 +39,13 @@ namespace Text.Tests
         public void Test5()
         {
             string test_string = "";
+            Assert.AreEqual(Str.IsPalindrome(test_string), true);
+        }
+
+        [Test]
+        public void Test6()
+        {
+            string test_string = "A man, a plan, a canal: Panama.";
             Assert.AreEqual(Str.IsPalindrome(test_string), true);
         }
 

@@ -16,7 +16,7 @@ namespace Text
             StringBuilder sb = new StringBuilder();
             foreach (char c in input)
             {
-                if (!char.IsPunctuation(c) || c != ' ')
+                if (char.IsLetter(c))
                 {
                     sb.Append(c);
                 }
