@@ -16,8 +16,8 @@ namespace Text.Tests
         [Test]
         public void Test2()
         {
-            string test_string = "bob";
-            Assert.AreEqual(Str.UniqueChar(test_string), -1);
+            string test_string = "helloholberton";
+            Assert.AreEqual(Str.UniqueChar(test_string), 8);
         }
     }
 }

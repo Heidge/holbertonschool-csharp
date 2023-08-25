@@ -17,8 +17,10 @@ namespace Text
             int count = 0;
             for (int i = 0; i < array.Length; i++)
             {
+                count = 0;
                 foreach (char c in array)
                 {
+                    
                     if (c == array[i])
                         count += 1;
                 }
