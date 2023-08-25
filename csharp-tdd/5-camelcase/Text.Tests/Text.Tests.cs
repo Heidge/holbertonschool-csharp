@@ -10,14 +10,14 @@ namespace Text.Tests
         [Test]
         public void Test1()
         {
-            string test_string = "JordanShelbyAlexShikamalex";
+            string test_string = "jordanShelbyAlexShikamalex";
             Assert.AreEqual(Str.CamelCase(test_string), 4);
         }
         [Test]
         public void Test2()
         {
             string test_string = "jordan";
-            Assert.AreEqual(Str.CamelCase(test_string), 0);
+            Assert.AreEqual(Str.CamelCase(test_string), 1);
         }
         [Test]
         public void Test3()
@@ -29,14 +29,9 @@ namespace Text.Tests
         public void Test4()
         {
             string test_string = "jordanShelby";
-            Assert.AreEqual(Str.CamelCase(test_string), 1);
+            Assert.AreEqual(Str.CamelCase(test_string), 2);
         }
-        [Test]
-        public void Test5()
-        {
-            string test_string = "Jordanshelby";
-            Assert.AreEqual(Str.CamelCase(test_string), 1);
-        }
+
 
     }
 }
