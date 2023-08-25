@@ -37,6 +37,5 @@ namespace Text.Tests
             string test_string = "aabbc";
             Assert.AreEqual(Str.UniqueChar(test_string), 4);
         }
-
     }
 }
