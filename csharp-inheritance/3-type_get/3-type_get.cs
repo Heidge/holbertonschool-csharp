@@ -10,23 +10,18 @@ class Obj
     {
         Type myObjType = myObj.GetType();
         TypeInfo t = myObjType.GetTypeInfo();
-        IEnumerable<PropertyInfo> pList = t.DeclaredProperties;
-        IEnumerable<MethodInfo> mList = t.DeclaredMethods;
+        PropertyInfo[] pList = t.GetProperties();
+        MethodInfo[] mList = t.GetMethods();
 
-        StringBuilder sb = new StringBuilder();
-        
-        sb.Append(t.Name + " Properties:");
-
+        Console.WriteLine(t.Name + " Properties:");
         foreach (PropertyInfo p in pList)
         {
-            sb.Append("\n" + p.Name);
+            Console.WriteLine(p.Name);
         }
-        sb.Append("\n" + t.Name + " Methods:");
+        Console.WriteLine(t.Name + " Methods:");
         foreach (MethodInfo m in mList)
         {
-            sb.Append("\n" + m.Name);
+            Console.WriteLine(m.Name);
         }
-
-        Console.WriteLine(sb.ToString());
     }
 }
