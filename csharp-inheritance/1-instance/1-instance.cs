@@ -1,12 +1,26 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
-namespace _1_instance
-{
-    class Program
+/// <summary>
+/// New class Obj
+/// </summary>
+    class Obj
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// new method for determine if obj is an array or not
+        /// </summary>
+        /// <param name="obj">first argument</param>
+        /// <returns>true if obj is an array, otherwise false</returns>
+        public static bool IsInstanceOfArray(object obj)
         {
-            Console.WriteLine("Hello World!");
+            Type objType = obj.GetType();
+            if (typeof(Array).IsAssignableFrom(objType) )
+                return true;
+            else
+            {
+                return false;
+            }
         }
     }
-}
+
