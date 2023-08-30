@@ -1,9 +1,12 @@
 ﻿using System;
 
-namespace _0_is
-{
     class Obj
     {
+        /// <summary>
+        /// New class named Obj
+        /// </summary>
+        /// <param name="obj">first argument passed</param>
+        /// <returns>true if obj is int, otherwise false</returns>
         public static bool IsOfTypeInt(object obj)
         {
             if (obj.GetType() == typeof(int))
@@ -14,4 +17,3 @@ namespace _0_is
             }
         }
     }
-}
