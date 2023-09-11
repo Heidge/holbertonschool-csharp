@@ -5,7 +5,7 @@
         public static double Magnitude(double[] vector)
         {
             int vectorLength = vector.Length;
-            int result = 0;
+            double result = 0;
             if (vectorLength < 2)
             {
                 return -1;
