@@ -18,6 +18,7 @@
                     
                 }
                 result = Math.Sqrt(result);
+                result = Math.Round(result, 2);
                 return result;
             }
         }
