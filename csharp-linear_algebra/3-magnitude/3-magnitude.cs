@@ -1,9 +1,12 @@
 ﻿using System;
 
+/// <summary>
+/// new class for vector calculations
+/// </summary>
     class VectorMath
     {
         /// <summary>
-        /// new class vector
+        /// new method for calculate length of a vector
         /// </summary>
         /// <param name="vector">argument that contains list of coordonates</param>
         /// <returns>length of the vector</returns>
