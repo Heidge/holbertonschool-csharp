@@ -6,7 +6,7 @@
         {
             int vector1Length = vector1.Length;
             int vector2Length = vector2.Length;
-            double newArray[] = new double [vector1Length];
+            double[] newArray = new double[vector1Length];
             double result = 0;
             if (vector1Length < 2 || vector1Length > 3 || vector2Length < 2 || vector2Length > 3 || vector1Length != vector2Length)
             {
