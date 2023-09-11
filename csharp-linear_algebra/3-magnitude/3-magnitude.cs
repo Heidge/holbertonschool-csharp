@@ -12,6 +12,7 @@
         /// <returns>length of the vector</returns>
         public static double Magnitude(double[] vector)
         {
+            ///aaa
             int vectorLength = vector.Length;
             double result = 0;
             if (vectorLength < 2 || vectorLength > 3)
