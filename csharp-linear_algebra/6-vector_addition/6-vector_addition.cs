@@ -7,10 +7,11 @@
 
             int vector1Length = vector1.Length;
             int vector2Length = vector2.Length;
-            double[] result = new double[];
+            double[] result = new double[vector1Length];
+            double[] error = new double[1] {-1};
             if (vector1Length < 2 || vector1Length > 3 || vector2Length < 2 || vector2Length > 3 || vector1Length != vector2Length)
             {
-                return -1;
+                return error;
             }
             else
             {
