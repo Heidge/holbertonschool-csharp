@@ -4,10 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        double[,] matrix = { { -2, 1 }, { 7, 9 } };
+        double[,] matrix = { { 1 } };
         double[,] result;
 
-        result = MatrixMath.MultiplyScalar(matrix, 8);
+        result = MatrixMath.MultiplyScalar(matrix, 1);
 
         for (int i = 0; i < result.GetLength(0); i++)
         {
