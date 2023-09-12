@@ -4,7 +4,7 @@ class MatrixMath
 {
     public static double[,] MultiplyScalar(double[,] matrix, double scalar)
     {
-        double[,] result = new double[matrix1.GetLength(0), matrix2.GetLength(1)];
+        double[,] result = new double[matrix.GetLength(0), matrix.GetLength(1)];
         double[,] error = new double[1, 1] {{ -1 }};
 
         if (matrix.GetLength(0) != matrix.GetLength(1))
