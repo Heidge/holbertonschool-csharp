@@ -15,11 +15,11 @@ class MatrixMath
         {
             for (int j = 0; j < matrix.GetLength(1); j++)
             {
-                if (direction == "X")
+                if (direction == "x")
                 {
                     result[i, 0] += Math.Pow(j, factor);
                 }
-                else if (direction == "Y")
+                else if (direction == "y")
                 {
                     result[0, j] += Math.Pow(i, factor);
                 }
