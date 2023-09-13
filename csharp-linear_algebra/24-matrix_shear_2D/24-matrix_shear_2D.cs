@@ -7,7 +7,7 @@ class MatrixMath
         double[,] result = new double[matrix.GetLength(0), matrix.GetLength(1)];
         double[,] error = new double[1, 1] { { -1 } };
 
-        if (matrix1.GetLength(1) != matrix2.GetLength(0))
+        if (matrix.GetLength(1) != matrix.GetLength(0))
         {
             return error;
         }
