@@ -5,9 +5,9 @@ class MatrixMath
     public static double[,] Transpose(double[,] matrix)
     {
         double[,] result = new double[matrix.GetLength(1), matrix.GetLength(0)];
-        double[,] error = new double[1, 1] { { -1 } };
+        double[,] error = new double[,];
 
-        if (matrix.GetLength(0) != matrix.GetLength(1) || matrix.GetLength(1) < 2)
+        if (matrix.Length == 0)
         {
             return error;
         }
