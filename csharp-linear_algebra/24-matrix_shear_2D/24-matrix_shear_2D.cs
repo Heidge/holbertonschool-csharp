@@ -11,20 +11,22 @@ class MatrixMath
         {
             return error;
         }
-        for (int i = 0; i < matrix.GetLength(0); i++)
+
+        if (direction.Equals('x'))
         {
-            for (int j = 0; j < matrix.GetLength(1); j++)
-            {
-                if (direction == "x")
-                {
-                    result[i, 0] += Math.Pow(j, factor);
-                }
-                else if (direction == "y")
-                {
-                    result[0, j] += Math.Pow(i, factor);
-                }
-            }
+            result[0, 0] = matrix[0, 1] * factor + matrix[0, 0];
+            result[0, 1] = matrix[0, 1];
+            result[1, 0] = matrix[1, 1] * factor + matrix[1, 0];
+            result[1, 1] = matrix[1, 1];
         }
+        else if (direction.Equals('y'))
+        {
+            result[0, 0] = matrix[0, 0];
+            result[0, 1] = matrix[0, 0] * factor + matrix[0, 1];
+            result[1, 0] = matrix[1, 0];
+            result[1, 1] = matrix[1, 0] * factor + matrix[1, 1];
+        }
+
         return result;
     }
 }
