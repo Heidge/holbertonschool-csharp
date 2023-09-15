@@ -14,7 +14,7 @@ class MatrixMath
 
         double determinant = matrix[0, 0] * matrix[1, 1] - matrix[0, 1] * matrix[1, 0];
 
-        if (matrix.GetLength(0) < 2)
+        if (determinant == 0)
         {
             return error;
         }

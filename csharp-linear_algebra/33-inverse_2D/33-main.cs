@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        double[,] matrix = { { 4 }, { 8 }, { 2 }, { -4 } };
+        double[,] matrix = { { 3, -3 }, { 1, -1 } };
         double[,] result;
 
         result = MatrixMath.Inverse2D(matrix);
