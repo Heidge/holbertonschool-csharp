@@ -7,7 +7,7 @@ class MatrixMath
         double[,] error = new double[1, 1] { { -1 } };
         double[,] matrixInverse = new double[2, 2];
 
-        if (matrix.GetLength(1) < 2)
+        if (matrix.GetLength(1) < 2 || matrix.GetLength(1) > 2)
         {
             return error;
         }
