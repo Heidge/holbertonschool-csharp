@@ -3,32 +3,31 @@
 /// <summary>
 /// new class for vector calculations
 /// </summary>
-    class VectorMath
+class VectorMath
+{
+    /// <summary>
+    /// new method for calculate length of a vector
+    /// </summary>
+    /// <param name="vector">argument that contains list of coordonates</param>
+    /// <returns>length of the vector</returns>
+    public static double Magnitude(double[] vector)
     {
-        /// <summary>
-        /// new method for calculate length of a vector
-        /// </summary>
-        /// <param name="vector">argument that contains list of coordonates</param>
-        /// <returns>length of the vector</returns>
-        public static double Magnitude(double[] vector)
+        int vectorLength = vector.Length;
+        double result = 0;
+        if (vectorLength < 2 || vectorLength > 3)
         {
-            ///aaa
-            int vectorLength = vector.Length;
-            double result = 0;
-            if (vectorLength < 2 || vectorLength > 3)
+            return -1;
+        }
+        else
+        {
+            for (int i = 0; i < vectorLength; i++)
             {
-                return -1;
+                result += Math.Pow(vector[i], 2);
+
             }
-            else
-            {
-                for (int i = 0; i < vectorLength; i++)
-                {
-                    result += Math.Pow(vector[i], 2);
-                    
-                }
-                result = Math.Sqrt(result);
-                result = Math.Round(result, 2);
-                return result;
-            }
+            result = Math.Sqrt(result);
+            result = Math.Round(result, 2);
+            return result;
         }
     }
+}
