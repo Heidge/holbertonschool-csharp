@@ -8,7 +8,7 @@ class MatrixMath
     /// <summary>
     /// New add method for matrix
     /// </summary>
-    /// <param name="matrix1">matrix one</param>
+    /// <param name="matrix">matrix one</param>
     /// <param name="scalar">scalar index</param>
     /// <returns>matrix scaled with scalar index</returns>
     public static double[,] MultiplyScalar(double[,] matrix, double scalar)
