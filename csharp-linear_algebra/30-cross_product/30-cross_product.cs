@@ -1,7 +1,16 @@
 ﻿using System;
 
+/// <summary>
+/// New vector class calculation
+/// </summary>
 class VectorMath
 {
+    /// <summary>
+    /// New method for determinate cross product of two matrixes gift
+    /// </summary>
+    /// <param name="vector1">vector one</param>
+    /// <param name="vector2">vector two</param>
+    /// <returns>cross product of the two matrixes</returns>
     public static double[] CrossProduct(double[] vector1, double[] vector2)
     {
 

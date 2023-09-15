@@ -1,7 +1,17 @@
 ﻿using System;
 
+/// <summary>
+/// New matrix class calculation
+/// </summary>
 class MatrixMath
 {
+    /// <summary>
+    /// New add method for matrix
+    /// </summary>
+    /// <param name="matrix">matrix gift in argument to the method</param>
+    /// <param name="direction">x or y</param>
+    /// <param name="factor">number for the multiplication</param>
+    /// <returns>sum of two matrixes</returns>
     public static double[,] Shear2D(double[,] matrix, char direction, double factor)
     {
         double[,] result = new double[matrix.GetLength(0), matrix.GetLength(1)];

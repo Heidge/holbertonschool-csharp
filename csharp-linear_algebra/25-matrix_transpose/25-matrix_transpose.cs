@@ -1,7 +1,15 @@
 ﻿using System;
 
+/// <summary>
+/// New matrix class calculation
+/// </summary>
 class MatrixMath
 {
+    /// <summary>
+    /// New method for transpose a matrix
+    /// </summary>
+    /// <param name="matrix">matrix gift in argument to the method</param>
+    /// <returns>new matrix transposed</returns>
     public static double[,] Transpose(double[,] matrix)
     {
         double[,] result = new double[matrix.GetLength(1), matrix.GetLength(0)];

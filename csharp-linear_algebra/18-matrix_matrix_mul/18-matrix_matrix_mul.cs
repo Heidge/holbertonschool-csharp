@@ -1,7 +1,16 @@
 ﻿using System;
 
+/// <summary>
+/// New matrix class calculation
+/// </summary>
 class MatrixMath
 {
+    /// <summary>
+    /// New add method for matrix
+    /// </summary>
+    /// <param name="matrix1">matrix one</param>
+    /// <param name="matrix2">matrix two</param>
+    /// <returns>multiplication of two matrixes</returns>
     public static double[,] Multiply(double[,] matrix1, double[,] matrix2)
     {
         double[,] result = new double[matrix1.GetLength(0), matrix2.GetLength(1)];

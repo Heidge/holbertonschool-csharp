@@ -1,7 +1,16 @@
 ﻿using System;
 
+/// <summary>
+/// New class for vector calculation
+/// </summary>
     class VectorMath
     {
+        /// <summary>
+        /// New method for calcul Dot product of two vectors
+        /// </summary>
+        /// <param name="vector1">vector one</param>
+        /// <param name="vector2">vector two</param>
+        /// <returns>Dot product of these two vectors</returns>
         public static double DotProduct(double[] vector1, double[] vector2)
         {
             int vector1Length = vector1.Length;

@@ -1,7 +1,16 @@
 ﻿using System;
 
+/// <summary>
+/// New class for vector calculation
+/// </summary>
     class VectorMath
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="vector">vector gift</param>
+        /// <param name="scalar">scalar index</param>
+        /// <returns>vector scale by scalar index</returns>
         public static double[] Multiply(double[] vector, double scalar)
         {
             int vectorLength = vector.Length;

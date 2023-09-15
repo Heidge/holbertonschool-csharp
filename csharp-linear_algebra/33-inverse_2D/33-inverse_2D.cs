@@ -1,7 +1,15 @@
 ﻿using System;
 
+/// <summary>
+/// New matrix class calculation
+/// </summary>
 class MatrixMath
 {
+    /// <summary>
+    /// New method for inverse a 2D matrix
+    /// </summary>
+    /// <param name="matrix">matrix gift in argument to the method</param>
+    /// <returns>inverse of the matrix gift</returns>
     public static double[,] Inverse2D(double[,] matrix)
     {
         double[,] error = new double[1, 1] { { -1 } };
