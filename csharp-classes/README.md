@@ -1,4 +1,4 @@
-# C# - Data Structures: Arrays, Lists, Dictionaries
+# C# - Classes and Namespaces
 
 ## Learning Objectives
 
