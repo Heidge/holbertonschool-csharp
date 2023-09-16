@@ -90,7 +90,7 @@ Based on 6-shape, write a class Rectangle that inherits from Shape.
     - public method: public new int Area()
         - This will override the Area() method defined in the Shape base class. (Try changing new to override and run the program. What happens?) returns the area of the rectangle
     - public method: public override string ToString()
-        - returns [Rectangle] <width> / <height>
+        - returns [Rectangle] width / height
 
 ### 8. Square #1
 
@@ -112,7 +112,7 @@ Based on 8-shape, write a class Square that inherits from Rectangle
         - get: retrieve size
         - set: if value is negative, throw an ArgumentException with the message Size must be greater than or equal to 0. Otherwise, set size, Height, and Width to the value.
     - Area() should work without writing a new Area() method within your Square class
-    - .ToString() should return [Square] <size> / <size>
+    - .ToString() should return [Square] size / size
 
 ### 10. Liskov
 
