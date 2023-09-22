@@ -28,7 +28,6 @@ class MatrixMath
                 {
                     result[i, j] += matrix1[i, k] * matrix2[k, j];
                 }
-
             }
         }
         return result;
