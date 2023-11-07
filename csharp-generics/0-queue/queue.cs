@@ -1,10 +1,16 @@
 ﻿using System;
-
-    public class Queue<T>
+/// <summary>
+/// New generic list Queue of type T
+/// </summary>
+/// <typeparam name="T"></typeparam>
+    class Queue<T>
     {
+        /// <summary>
+        /// New function for check type
+        /// </summary>
+        /// <returns>Type of T</returns>
         public Type CheckType()
         {
-            Type typeParameterType = typeof(T);
-            return(typeParameterType);
+            return(typeof(T));
         }
     }
