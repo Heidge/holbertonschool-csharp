@@ -1,6 +1,6 @@
 # holbertonschool-csharp
 
-![screenshot c#](https://www.google.com/imgres?imgurl=https%3A%2F%2Fblog.dyma.fr%2Fcontent%2Fimages%2F2023%2F05%2Fcsharp1200x628.png&tbnid=CuVlUffkxPxdrM&vet=12ahUKEwjh_befmr6BAxXSsEwKHbr0CJoQMygPegQIARBT..i&imgrefurl=https%3A%2F%2Fblog.dyma.fr%2Fcsharp%2F&docid=5FFTuouueyZGYM&w=2400&h=1256&q=c%23&ved=2ahUKEwjh_befmr6BAxXSsEwKHbr0CJoQMygPegQIARBT)
+![screenshot c#](https://blog.dyma.fr/content/images/size/w960/2023/05/csharp1200x628.png)
 
 ## Projects
 
