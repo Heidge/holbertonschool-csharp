@@ -105,6 +105,7 @@ class Queue<T>
     public string Concatenate()
     {
         string concat = "";
+        string space = "";
         Node n = head;
 
         if (head == null)
@@ -118,11 +119,12 @@ class Queue<T>
             {
                 if (CheckType() == typeof(string) || CheckType() == typeof(char))
                 {
-                    concat += n.value + " ";
+                    concat += space + n.value;
+                    space = " ";
                 }
                 else
                 {
-                    Console.WriteLine("Concatenate() is for a queue of Strings or Chars only.");
+                    Console.WriteLine("Concatenate is for a queue of Strings or Chars only.");
                     return null;
                 }
             }
