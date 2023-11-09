@@ -1,30 +1,24 @@
 ﻿using System;
-/// <summary>
-/// New generic list Queue of type T
-/// </summary>
-/// <typeparam name="T"></typeparam>
+
+/// <summary>New generic list Queue of type T</summary>
+/// <typeparam name="T">generic type</typeparam>
 class Queue<T>
 {
-    /// <summary>
-    /// New function for check type
-    /// </summary>
-    /// <returns>Type of T</returns>
-    /// 
+    public Node head;
+    public Node tail;
+    public int count = 0;
 
+    /// <summary>Method for check type of T</summary>
+    /// <returns>type of T</returns>
     public Type CheckType()
     {
         return typeof(T);
     }
 
-    public Node head;
-    public Node tail;
-    int count = 0;
 
     public class Node
     {
-        /// <summary>
-        /// New class for object Node
-        /// </summary>
+        /// <summary>New class for object Node</summary>
         public T value = default(T);
         public Node next = null;
 
@@ -34,9 +28,7 @@ class Queue<T>
         }
     }
 
-    /// <summary>
-    /// new method for add a node to Queue object
-    /// </summary>
+    /// <summary>new method for add a node to Queue object</summary>
     /// <param name="p">value of the node</param>
     public void Enqueue(T p)
     {
@@ -54,10 +46,8 @@ class Queue<T>
         count++;
     }
 
-    /// <summary>
-    /// new method for know number of node inside queue object
-    /// </summary>
-    /// <returns></returns>
+    /// <summary>new method for know number of node inside queue object</summary>
+    /// <returns>number of node</returns>
     public int Count()
     { return count; }
 
