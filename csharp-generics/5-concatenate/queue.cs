@@ -116,9 +116,9 @@ class Queue<T>
         {
             for (; n != null; n = n.next)
             {
-                if (CheckType() != typeof(string) || CheckType() != typeof(char))
+                if (CheckType() == typeof(string) || CheckType() == typeof(char))
                 {
-                    concat += n.value;
+                    concat += n.value + " ";
                 }
                 else
                 {
