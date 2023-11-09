@@ -10,6 +10,12 @@ class Queue<T>
     /// </summary>
     /// <returns>Type of T</returns>
     /// 
+
+    public Type CheckType()
+    {
+        return typeof(T);
+    }
+
     public Node head;
     public Node tail;
     int count = 0;

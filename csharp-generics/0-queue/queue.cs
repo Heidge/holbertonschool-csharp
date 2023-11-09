@@ -5,28 +5,9 @@
 /// <typeparam name="T"></typeparam>
 class Queue<T>
 {
-    /// <summary>
-    /// New function for check type
-    /// </summary>
-    /// <returns>Type of T</returns>
-    Node head = new Node;
-    Node tail = new Node;
-    int count;
-    public class Node
+    public Type CheckType()
     {
-        Node next = null;
-        int value = null;
-        public Node(Node value)
-        {
-            Value = value;
-        }
-
-        public string Value
-        {
-            set;
-        }
-
-
+        return typeof(T);
     }
 }
 
