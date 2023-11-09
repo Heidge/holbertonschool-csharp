@@ -122,6 +122,10 @@ class Queue<T>
                     concat += space + n.value;
                     space = " ";
                 }
+                else if (CheckType() == typeof(char))
+                {
+                    concat += n.value;
+                }
                 else
                 {
                     Console.WriteLine("Concatenate is for a queue of Strings or Chars only.");
