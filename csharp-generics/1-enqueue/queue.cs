@@ -33,6 +33,7 @@ class Queue<T>
     public void Enqueue(T p)
     {
         Node n = new Node(p); 
+
         if (head == null)
         {
             head = n;
@@ -50,6 +51,5 @@ class Queue<T>
     /// <returns>number of node</returns>
     public int Count()
     { return count; }
-
 }
 
