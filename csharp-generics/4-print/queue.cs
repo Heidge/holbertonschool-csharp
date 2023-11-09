@@ -88,11 +88,17 @@ class Queue<T>
     /// <returns>default value if queue empty, else value removed</returns>
     public void Print()
     {
-        Node n = head;
-        for (; n != null; n = n.next)
+        if (head == null)
+            Console.WriteLine("Queue is empty");
+        else
         {
-            Console.WriteLine(n.value);
+            Node n = head;
+            for (; n != null; n = n.next)
+            {
+                Console.WriteLine(n.value);
+            }
         }
+        
     }
 }
 
