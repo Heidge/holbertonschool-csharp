@@ -44,9 +44,11 @@ class Queue<T>
         if (head == null)
         {
             head = n;
+            tail = n;
         }
         else
         {
+            tail.next = n;
             tail = n;
         }
         count++;
