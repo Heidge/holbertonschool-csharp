@@ -34,6 +34,10 @@ class Queue<T>
         }
     }
 
+    /// <summary>
+    /// new method for add a node to Queue object
+    /// </summary>
+    /// <param name="p">value of the node</param>
     public void Enqueue(T p)
     {
         Node n = new Node(p); 
@@ -48,12 +52,12 @@ class Queue<T>
         count++;
     }
 
+    /// <summary>
+    /// new method for know number of node inside queue object
+    /// </summary>
+    /// <returns></returns>
     public int Count()
     { return count; }
-
-
-
-
 
 }
 
