@@ -24,8 +24,11 @@ interface ICollectable
 /// <summary>abstract class base</summary>
 public abstract class Base
 {
+	/// <summary>public property name</summary>
 	public string name { get; set; }
 
+	/// <summary>Method override ToString</summary>
+	/// <returns>The value of name and his type</returns>
 	public override string ToString()
 	{
 		return name + $" is a " + this.GetType().Name;
