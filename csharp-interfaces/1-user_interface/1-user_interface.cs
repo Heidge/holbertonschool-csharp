@@ -25,9 +25,9 @@ abstract class Base
 		bool isCollected { get; set;}
 		void Collect();
 	}
-}
 
-class TestObject : Base, IInteractive, IBreakable, ICollectable
-{
+	class TestObject : Base, IInteractive, IBreakable, ICollectable
+	{
 
+	}
 }
