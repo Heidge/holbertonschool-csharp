@@ -1,12 +1,33 @@
 ﻿using System;
 
-namespace _1_user_interface
+abstract class Base
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
+	public string name { get; set; }
+
+	public override string ToString()
+	{
+		return name + $" is a " + this.GetType().Name;
+	}
+
+	interface IInteractive
+	{
+		void Interact();
+	}
+
+	interface IBreakable
+	{
+		int durability { get; set;}
+		void Break();
+	}
+
+	interface ICollectable
+	{
+		bool isCollected { get; set;}
+		void Collect();
+	}
+}
+
+class TestObject : Base, IInteractive, IBreakable, ICollectable
+{
+
 }
