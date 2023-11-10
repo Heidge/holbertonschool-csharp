@@ -38,19 +38,34 @@ public abstract class Base
 /// <summary>inherit class from base with 3 interfaces implementation</summary>
 public class TestObject : Base, IInteractive, IBreakable, ICollectable
 {
+	/// <summary>
+	/// int property for durability 
+	/// </summary>
 	public int durability {get; set; }
+	/// <summary>
+	/// bool property for isCollected
+	/// </summary>
 	public bool isCollected { get; set; }
 
+	/// <summary>
+	/// Interact method
+	/// </summary>
 	public void Interact()
 	{
 
 	}
 
+	/// <summary>
+	/// Break method
+	/// </summary>
 	public void Break()
 	{
 
 	}
 
+	/// <summary>
+	/// Collect method
+	/// </summary>
 	public void Collect()
 	{
 
