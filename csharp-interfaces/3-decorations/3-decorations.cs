@@ -101,7 +101,7 @@ public class Decoration : Base, IInteractive, IBreakable
 		if (durability > 0)
 			Console.WriteLine($"You hit the {name}. It cracks.");
 		else if (durability == 0)
-			Console.WriteLine($"You hit the {name}. What a mess.");
+			Console.WriteLine($"You smash the {name}. What a mess.");
 		else
 			Console.WriteLine($"The {name} is already broken.");
 	}
