@@ -56,12 +56,21 @@ public class Door : Base, IInteractive
 	}
 
 }
-
+/// <summary>inherit class Decoration from base with 2 interfaces implementation</summary>
 public class Decoration : Base, IInteractive, IBreakable
 {
+	/// <summary>isQuestItem property</summary>
 	public bool isQuestItem { get; set; }
+	/// <summary>durability property</summary>
 	public int durability { get; set; }
 
+	/// <summary>
+	/// 
+	/// </summary>
+	/// <param name="name">name variable from base class</param>
+	/// <param name="durability">durability property from Ibreakable interface</param>
+	/// <param name="IsQuestItem">isQuestItem property from this class</param>
+	/// <exception cref="Exception">throw exception if durability are less or equal to 0</exception>
 	public Decoration (string name = "Decoration", int durability = 1, bool IsQuestItem = false)
 	{
 		this.name = name;
@@ -72,6 +81,7 @@ public class Decoration : Base, IInteractive, IBreakable
 			throw new Exception("Durability must be greather than 0");
 	}
 
+	/// <summary>Interact method implementation from IInteractive interface</summary>
 	public void Interact()
 	{
 		if (durability <= 0)
@@ -83,6 +93,7 @@ public class Decoration : Base, IInteractive, IBreakable
 				Console.WriteLine($"You look at the {name}. Not much to see here.");
 	}
 
+	/// <summary>Break method implementation from IBreakable interface</summary>
 	public void Break()
 	{
 
