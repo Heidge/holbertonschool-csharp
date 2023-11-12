@@ -96,7 +96,6 @@ public class Decoration : Base, IInteractive, IBreakable
 	/// <summary>Break method implementation from IBreakable interface</summary>
 	public void Break()
 	{
-
 		durability--;
 		if (durability >= 0)
 			Console.WriteLine($"You hit the {name}. It cracks.");
