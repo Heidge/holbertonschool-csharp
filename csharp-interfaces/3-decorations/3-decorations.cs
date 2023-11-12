@@ -69,7 +69,7 @@ public class Decoration : Base, IInteractive, IBreakable
 	/// </summary>
 	/// <param name="name">name variable from base class</param>
 	/// <param name="durability">durability property from Ibreakable interface</param>
-	/// <param name="IsQuestItem">isQuestItem property from this class</param>
+	/// <param name="isQuestItem">isQuestItem property from this class</param>
 	/// <exception cref="Exception">throw exception if durability are less or equal to 0</exception>
 	public Decoration (string name = "Decoration", int durability = 1, bool isQuestItem = false)
 	{
