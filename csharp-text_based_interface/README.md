@@ -36,7 +36,7 @@ Within the InventoryLibrary, create a class called Item that inherits from BaseC
   - description - string
   - price - float, limit to 2 decimal points
   - tags - a list of strings
-	- 
+	
 Within the InventoryLibrary, create a class called User that inherits from BaseClass. User should define:
 
 - Required properties
