@@ -25,6 +25,14 @@ public class Inventory : BaseClass
 		}
 	}
 
+	public Inventory(User user, Item item, int quantity = 1)
+	{
+		this.user_id = user.id;
+		this.item_id = item.id;
+		this.quantity = quantity;
+
+	}
+
 
 
 }

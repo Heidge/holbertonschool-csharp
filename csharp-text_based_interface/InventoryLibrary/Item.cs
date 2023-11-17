@@ -46,9 +46,9 @@ public class Item : BaseClass
 
 	public Item(string name, string description, int price, List<string> tags)
 	{
-		Name = name;
-		Description = description;
-		Price = price;
-		Tags = tags;
+		this.name = name;
+		this.description = description;
+		this.price = price;
+		this.tags = tags;
 	}
 }
