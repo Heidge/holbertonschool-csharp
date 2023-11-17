@@ -1,4 +1,5 @@
 ﻿using System;
+using InventoryLibrary;
 
 /// <summary>
 /// Summary description for Class1
@@ -21,5 +22,10 @@ public class User : BaseClass
 				name = value;
 			}
 		}
+	}
+
+	public User(string name)
+	{
+		this.name = name;
 	}
 }

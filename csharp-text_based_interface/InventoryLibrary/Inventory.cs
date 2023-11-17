@@ -1,4 +1,5 @@
 ﻿using System;
+using InventoryLibrary;
 
 /// <summary>
 /// Summary description for Class1

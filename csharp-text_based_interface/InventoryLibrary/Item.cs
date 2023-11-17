@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using InventoryLibrary;
 
 /// <summary>
 /// Summary description for Class1
@@ -44,7 +45,7 @@ public class Item : BaseClass
 		}
 	}
 
-	public Item(string name, string description, int price, List<string> tags)
+	public Item(string name, string description = null, int price = 0, List<string> tags = null)
 	{
 		this.name = name;
 		this.description = description;
