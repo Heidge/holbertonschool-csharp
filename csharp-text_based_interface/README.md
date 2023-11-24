@@ -1,17 +1,4 @@
-# C# - Structs, Enumerations
-
-## Learning Objectives
-
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
-
-### General
-
-- What is a struct
-- What is a constructor
-- What is a field
-- What is a property
-- What is an enumeration and when to use them
-- What does toString do and how to override it
+# C# - Text-based Interface
 
 ## C# Tasks
 
@@ -53,7 +40,7 @@ A required property **must** have a value on creation, it cannot be left blank
 
 ### 2. In Store
 
-With our classes defined, let’s create our storage class. Create a class called JSONStorage. JSONStorage should define:
+With our classes defined, letâ€™s create our storage class. Create a class called JSONStorage. JSONStorage should define:
 
 - Properties:
   - objects - dictionary where keys are \<ClassName>.\<id> and values are the objects
@@ -117,4 +104,4 @@ Inventory Manager
 
 ### 4. Test 1, 2, 3
 
-Your project must have unit tests. The number of tests is less important than the quality and effectiveness of your tests. Make sure you’re checking your object operations, edge cases, all user input possibilities, etc.
+Your project must have unit tests. The number of tests is less important than the quality and effectiveness of your tests. Make sure youâ€™re checking your object operations, edge cases, all user input possibilities, etc.
