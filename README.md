@@ -14,3 +14,6 @@
 - [C# - Test Driven Development](https://github.com/Heidge/holbertonschool-csharp/tree/main/csharp-tdd)
 - [C# - Inheritance](https://github.com/Heidge/holbertonschool-csharp/tree/main/csharp-inheritance)
 - [C# - Linear Algebra](https://github.com/Heidge/holbertonschool-csharp/tree/main/csharp-liner_algebra)
+- [C# - Linear Algebra](https://github.com/Heidge/holbertonschool-csharp/tree/main/csharp-liner_algebra)
+- [C# - Linear Algebra](https://github.com/Heidge/holbertonschool-csharp/tree/main/csharp-liner_algebra)
+- [C# - Linear Algebra](https://github.com/Heidge/holbertonschool-csharp/tree/main/csharp-liner_algebra)
